@@ -19,8 +19,18 @@ class person {
     }
 }
 
+class tipodebanco extends person{
+    constructor(tipo){
+        super(nome);
+        this.tipo = tipo;
+    }
+}
+
+
+
 let p1 = new person ("lua");
 
-p1._agencia = "nunbak"
+p1._agencia = "nubank"
+p1.tipo = "corrente"
 
-console.log(`${p1.nome} tem a conta na agencia ${p1._agencia}`)
+console.log(`${p1.nome} tem a conta na agencia ${p1._agencia} do tipo ${p1.tipo}`)
